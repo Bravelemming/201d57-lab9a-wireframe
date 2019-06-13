@@ -1,6 +1,6 @@
 *{
   box-sizing: border-box;
-
+  font-family: Helvetica, sans-serif;
 }
 
 header {
@@ -12,11 +12,6 @@ header {
 main {
   width: 960px;
   margin: auto;
-}
-
-footer {
-  background-color: #444;
-  height: 150px;
 }
 
 nav {
@@ -56,14 +51,10 @@ main > ul > li {
 main > ul > li:nth-child(3n + 2){
   margin: 0 30px;
 }
-/* main > ul > li:nth-of-type(3){
-  margin: 0;
-} */
 
 main > ul {
   margin-bottom: 30px;
   overflow: hidden;
-
 }
 
 main > article {
@@ -74,13 +65,42 @@ main > article > section {
   float:right;
   padding-left: 30px;
 }
+section {
+  position: relative;
+  height: 400px;
+}
 
 section > button {
   width: 120px;
   height: 30px;
   background-color: #111;
-  color: blanchedalmond;
+  color: #eee;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 0px;
+}
 
+section > button:hover{
+  background-color: blanchedalmond;
+  color: #111;
+  transition: 350ms;
+}
+
+footer {
+  background-color: #444;
+  height: 150px;
 }
 
 
+h3 {
+  font-size: 1.2em;
+  margin-bottom: 7px;
+}
+
+p {
+  font-size: 1em;
+  font-style: italic;
+  height: 336px;
+  overflow: auto;
+  
+}
